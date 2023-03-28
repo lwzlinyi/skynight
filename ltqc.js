@@ -49,46 +49,47 @@ async function start() {
         }
 
     }
-    await Promise.all(taskall);
-    /*console.log('\n================== 每日分享 ==================\n');
-    taskall = [];
+/*    await Promise.all(taskall);
+*    /*console.log('\n================== 每日分享 ==================\n');
+*    taskall = [];
+*    for (let user of userList) {
+*        if (user.ckstatus) {
+*            for (let i = 0; i < 3; i++) {
+*                taskall.push(await user.task_share());
+*                await $.wait(5000);
+*            }
+*        }
+*    }
+*
+**    await Promise.all(taskall);*/
+*    console.log('\n================== 发布文章 ==================\n');
+*    taskall = [];
+*    for (let user of userList) {
+*        if (user.ckstatus) {
+*            taskall.push(await user.task_create1());
+ *           await $.wait(10000);
+*        }
+ *   }
+*    await Promise.all(taskall);
+*    /*console.log('\n================== 发布图文 ==================\n');
+ *   taskall = [];
     for (let user of userList) {
-        if (user.ckstatus) {
-            for (let i = 0; i < 3; i++) {
-                taskall.push(await user.task_share());
-                await $.wait(5000);
-            }
-        }
+*        if (user.ckstatus) {
+ *           taskall.push(await user.task_create2());
+  *          await $.wait(10000);
+   *     }
     }
-    await Promise.all(taskall);*/
-    console.log('\n================== 发布文章 ==================\n');
-    taskall = [];
-    for (let user of userList) {
-        if (user.ckstatus) {
-            taskall.push(await user.task_create1());
-            await $.wait(10000);
-        }
-    }
-    await Promise.all(taskall);
-    /*console.log('\n================== 发布图文 ==================\n');
-    taskall = [];
-    for (let user of userList) {
-        if (user.ckstatus) {
-            taskall.push(await user.task_create2());
-            await $.wait(10000);
-        }
-    }
-    await Promise.all(taskall);*/
-    /*console.log('\n================== 评论文章 ==================\n');
-    taskall = [];
-    for (let user of userList) {
-        if (user.ckstatus) {
-            taskall.push(await user.task_artlist());
-        }
-    }
-    await Promise.all(taskall);*/
-}
-
+*    await Promise.all(taskall);*/
+*    /*console.log('\n================== 评论文章 ==================\n');
+*    taskall = [];
+*    for (let user of userList) {
+*        if (user.ckstatus) {
+*            taskall.push(await user.task_artlist());
+*        }
+*    }
+*    await Promise.all(taskall);*/
+*}
+*/
 
 class UserInfo {
     constructor(str) {
