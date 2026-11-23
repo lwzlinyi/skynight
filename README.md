@@ -1,3 +1,8 @@
+> [!WARNING]
+> **已归档（2026-11-23）**：2023 年的历史脚本备份，上游亦已停更，不再维护。详情见 [ARCHIVED.md](ARCHIVED.md)。
+>
+> ---
+
 <div align="center"> 
   <h1 align="center">自用ql脚本备份</h1>
   <img src="https://visitor-badge.glitch.me/badge?page_id=SkyNightovo/js" /></img>
